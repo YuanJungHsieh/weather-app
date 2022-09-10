@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const port = process.env.PORT || 5000;
 const expressLayouts = require("express-ejs-layouts");
 
 const forecast = require("./utils/forecast");
@@ -66,6 +67,6 @@ app.post("/weather", (req, res) => {
   res.redirect(`/weather/${req.body.location}`);
 });
 
-app.listen(5000, () => {
-  console.log("Server is running on port 5000");
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
