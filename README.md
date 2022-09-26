@@ -20,4 +20,6 @@
 - [Weatherstack](https://weatherstack.com)
 - [Mapbox](https://www.mapbox.com)
 
+function：user type in city name and get the weather info response from the website.
+
 #### Website link：https://leohsieh-weather-app.herokuapp.com
